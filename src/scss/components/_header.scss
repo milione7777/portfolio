@@ -1,5 +1,8 @@
 .header {
   padding-top: 20px;
+  @media screen and (min-width: 768px) {
+    padding-top: 45px;
+  }
 }
 
 .open {
@@ -8,9 +11,6 @@
 
 .nav {
   display: flex;
-  @media screen and (min-width: 768px) {
-    margin-left: 90px;
-  }
 }
 
 .nav ul {
@@ -48,17 +48,7 @@
 .burger::after {
   bottom: 0;
 }
-.burger.active span {
-  transform: scale(0);
-}
-.burger.active::before {
-  top: 50%;
-  transform: rotate(-45deg) translate(0, -50%);
-}
-.burger.active::after {
-  bottom: 50%;
-  transform: rotate(45deg) translate(0, 60%);
-}
+
 @media (max-width: 767px) {
   .burger {
     display: flex;
@@ -84,7 +74,6 @@
       rgb(126, 109, 83) 110.238%
     );
     animation: burgerAnimation 0.4s;
-
   }
 
   .nav .list-nav-menu {
@@ -119,4 +108,22 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2%;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.btn-nav {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.btn-border {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 15px;
 }

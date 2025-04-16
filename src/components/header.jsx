@@ -6,22 +6,28 @@ function Header() {
   return (
     <header className="header">
       <div className="container items-center flex justify-between">
-
         <h3 className="text-white name-header">Stanko A.Y</h3>
+        <nav className="nav">
+          <ul className="text-white items-center w-[300px] justify-between hidden md:flex">
+            <li>
+              <a className="btn-nav" href="/">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="btn-nav" href="/">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="btn-nav" href="/">
+                Portfolio
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-        <ul className="text-white items-center w-[300px] justify-between hidden md:flex">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Portfolio</a>
-          </li>
-        </ul>
-
-        <a className="text-white hidden md:block" href="/">
+        <a className="text-white hidden md:block btn-border" href="/">
           Let’s talk
         </a>
 
